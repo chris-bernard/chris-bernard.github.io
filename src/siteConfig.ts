@@ -11,13 +11,11 @@ export interface SiteConfiguration {
 }
 
 interface IconLink {
-  id: string;
   icon: string;
   url: string;
 }
 
 interface CustomLink {
-  id: string;
   title: string;
   url: string;
 }
