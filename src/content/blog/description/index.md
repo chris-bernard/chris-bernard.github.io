@@ -1,6 +1,6 @@
 ---
-title: Quelques mots sur moi
-description: Présentation de Christophe Bernard
+title: A propos
+description: Présentation de mon travail
 publicationDate: 2025-03-26
 ---
 

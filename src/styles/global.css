@@ -7,37 +7,37 @@
     color-scheme: light dark;
 
     /* replace colors from here... */
-    --light-mode-background: 240 240 240;
+    --light-mode-background: 235 235 235; /* 246, 248, 250 */
     --light-mode-foreground: 0 0 0;
     --light-mode-foreground-muted: 50 50 50;
     --light-mode-icon-link-outline: 50 50 50;
-    --light-mode-icon-link-background: 255 255 255;
+    --light-mode-icon-link-background: 246 248 250;
     --light-mode-icon-link-text: 0 0 0;
     --light-mode-icon-link-outline-hover: 0 0 0;
-    --light-mode-icon-link-background-hover: 240 240 240;
+    --light-mode-icon-link-background-hover: 255 255 255;
     --light-mode-icon-link-text-hover: 0 0 0;
     --light-mode-custom-link-outline: 50 50 50;
-    --light-mode-custom-link-background: 255 255 255;
+    --light-mode-custom-link-background: 246 248 250;
     --light-mode-custom-link-text: 0 0 0;
     --light-mode-custom-link-outline-hover: 0 0 0;
-    --light-mode-custom-link-background-hover: 240 240 240;
+    --light-mode-custom-link-background-hover: 255 255 255;
     --light-mode-custom-link-text-hover: 0 0 0;
 
-    --dark-mode-background: 10 10 10;
-    --dark-mode-foreground: 255 255 255;
-    --dark-mode-foreground-muted: 205 205 205;
-    --dark-mode-icon-link-outline: 205 205 205;
-    --dark-mode-icon-link-background: 0 0 0;
-    --dark-mode-icon-link-text: 255 255 255;
-    --dark-mode-icon-link-outline-hover: 255 255 255;
-    --dark-mode-icon-link-background-hover: 50 50 50;
-    --dark-mode-icon-link-text-hover: 255 255 255;
-    --dark-mode-custom-link-outline: 205 205 205;
-    --dark-mode-custom-link-background: 0 0 0;
-    --dark-mode-custom-link-text: 255 255 255;
-    --dark-mode-custom-link-outline-hover: 255 255 255;
-    --dark-mode-custom-link-background-hover: 50 50 50;
-    --dark-mode-custom-link-text-hover: 255 255 255;
+    --dark-mode-background: 13 17 23; /* #0D1117 Bunker */
+    --dark-mode-foreground: 255 0 63; /* #FF003F Electric Crimson, near Torch Red  */
+    --dark-mode-foreground-muted: 230 230 230; /* #E6E6E6 */
+    --dark-mode-icon-link-outline: 230 230 230; /* #E6E6E6 */
+    --dark-mode-icon-link-background: 10 13 18; /* #0A0D12 */
+    --dark-mode-icon-link-text: 230 230 230; /* #E6E6E6 */
+    --dark-mode-icon-link-outline-hover: 255 255 255; /* #FFFFFF */
+    --dark-mode-icon-link-background-hover: 37 40 46; /* #25282E */
+    --dark-mode-icon-link-text-hover: 230 230 230; /* #E6E6E6 */
+    --dark-mode-custom-link-outline: 230 230 230; /* #E6E6E6 */
+    --dark-mode-custom-link-background: 10 13 18; /* #0A0D12 */
+    --dark-mode-custom-link-text: 230 230 230; /* #E6E6E6 */
+    --dark-mode-custom-link-outline-hover: 255 255 255; /* #FFFFFF */
+    --dark-mode-custom-link-background-hover: 37 40 46; /* #25282E */
+    --dark-mode-custom-link-text-hover: 230 230 230; /* #E6E6E6 */
     /* ...to here */
   }
 
