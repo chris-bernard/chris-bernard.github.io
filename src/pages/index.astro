@@ -16,7 +16,7 @@ const posts = (await getCollection("blog")).sort(
 ---
 
 <BaseLayout>
-  <SeoPage slot="head" />
+  <SeoPage slot="head" title={SITE.title} description={SITE.bio}/>
   <main>
     <Content />
     {
