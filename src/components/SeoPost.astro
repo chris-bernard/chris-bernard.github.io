@@ -7,6 +7,7 @@ const post = entry as CollectionEntry<"blog">;
 
 const postTitle = post.data.title || SITE.name;
 const postDescription = post.data.description || SITE.bio;
+const ogDescription = post.data.description || SITE.og.description;
 const ogImage = new URL("./og.jpg", Astro.site);
 ---
 
@@ -16,22 +17,17 @@ const ogImage = new URL("./og.jpg", Astro.site);
 <link rel="canonical" href={SITE.url} />
 
 <meta property="og:title" content={postTitle} />
-<meta property="og:description" content={postDescription} />
-<meta
-  property="og:image"
-  content={`${SITE.url}${post?.data?.image?.src}` || ogImage}
-/>
-<meta property="og:image:alt" content={postTitle} />
-<meta property="og:type" content="website" />
-<meta property="og:locale" content={SITE.locale} />
+<meta property="og:description" content={ogDescription} />
+<meta property="og:image" content={`${SITE.url}${post?.data?.image?.src}` || ogImage}/>
+<meta property="og:image:alt" content={ogDescription} />
+<meta property="og:type" content={SITE.og.type} />
+<meta property="og:url" content={SITE.url} />
+<meta property="og:locale" content={SITE.og.locale} />
 
 <meta name="twitter:title" content={postTitle} />
-<meta name="twitter:description" content={postDescription} />
-<meta
-  property="twitter:image"
-  content={`${SITE.url}${post?.data?.image?.src}` || ogImage}
-/>
-<meta name="twitter:image:alt" content={postTitle} />
+<meta name="twitter:description" content={ogDescription} />
+<meta name="twitter:image" content={`${SITE.url}${post?.data?.image?.src}` || ogImage}/>
+<meta name="twitter:image:alt" content={ogDescription} />
 <meta name="twitter:card" content="summary_large_image" />
 
 {

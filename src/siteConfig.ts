@@ -6,8 +6,15 @@ export interface SiteConfiguration {
   profilePicture: string;
   url: string;
   blog: boolean;
+  og: OpenGraph;
   iconLinks: IconLink[];
   customLinks: CustomLink[];
+}
+
+interface OpenGraph {
+  description: string;
+  locale: string;
+  type: string;
 }
 
 interface IconLink {

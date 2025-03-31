@@ -1,9 +1,14 @@
 {
-  "name": "Christophe Bernard",
+  "name": "Christophe Bernard - Bio Links",
   "bio": "J'imagine et réalise des softwares sur mesure, en alliant performance et expérience utilisateur, pour accompagner la croissance et servir le business model",
   "profilePicture": "/profile-picture.jpg",
-  "url": "https://trevortylerlee.com",
+  "url": "https://chris-bernard.github.io",
   "blog": true,
+  "og": {
+    "description": "Réalisation de softwares sur mesure {UX, perf, croissance}",
+    "locale": "fr_FR",
+    "type": "website"
+  },
   "iconLinks": [
     {
       "icon": "link",
