@@ -6,6 +6,7 @@ export interface SiteConfiguration {
   profilePicture: string;
   url: string;
   blog: boolean;
+  title: string;
   og: OpenGraph;
   iconLinks: IconLink[];
   customLinks: CustomLink[];

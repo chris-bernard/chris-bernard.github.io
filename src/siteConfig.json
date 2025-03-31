@@ -1,9 +1,10 @@
 {
-  "name": "Christophe Bernard - Bio Links",
+  "name": "Christophe Bernard",
   "bio": "J'imagine et réalise des softwares sur mesure, en alliant performance et expérience utilisateur, pour accompagner la croissance et servir le business model",
   "profilePicture": "/profile-picture.jpg",
   "url": "https://chris-bernard.github.io",
   "blog": true,
+  "title": "Christophe Bernard - Bio Links",
   "og": {
     "description": "Réalisation de softwares sur mesure {UX, perf, croissance}",
     "locale": "fr_FR",
@@ -33,12 +34,12 @@
   ],
   "customLinks": [
     {
-      "title": "☄\uFE0F Freelance Bootstrap, le coaching express",
-      "url": "https://calendly.com/freelance-bootstrap/30min"
+      "title": "\uD83D\uDE80 ZRS Lab",
+      "url": "https://www.zrs.fr"
     },
     {
-      "title": "ZRS Lab, mon startup studio",
-      "url": "https://www.zrs.fr"
+      "title": "☄\uFE0F Frrelance Bootstrap",
+      "url": "https://calendly.com/freelance-bootstrap/30min"
     }
   ]
 }
