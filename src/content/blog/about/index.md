@@ -1,6 +1,6 @@
 ---
 title: A propos
-description: Présentation de mon travail
+description: En savoir plus ?
 publicationDate: 2025-03-26
 ---
 
