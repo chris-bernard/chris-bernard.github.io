@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 
 import { SITE } from "@/siteConfig";
 
@@ -24,7 +24,7 @@ import Favicons from "@/components/Favicons.astro";
   />
   <meta
     name="theme-color"
-    content="#000"
+    content="#0d1117"
     media="(prefers-color-scheme: dark)"
   />
 
@@ -37,7 +37,7 @@ import Favicons from "@/components/Favicons.astro";
     href={new URL("rss.xml", Astro.site)}
   />
 
-  <ViewTransitions />
+  <ClientRouter />
   <Favicons />
 
   <slot />
