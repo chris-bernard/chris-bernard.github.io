@@ -17,11 +17,9 @@ import ThemeToggle from "@/components/ThemeToggle.astro";
     <script is:inline>
       const theme = (() => {
         if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-          console.log('Theme preference found in localStorage: ' + localStorage.getItem('theme'));
           return localStorage.getItem('theme');
         }
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          console.log('Dark mode preferred by user: dark');
           return 'dark';
         }
         return 'light';
@@ -33,7 +31,7 @@ import ThemeToggle from "@/components/ThemeToggle.astro";
         document.documentElement.classList.add('dark');
       }
 
-      window.localStorage.setItem('theme', theme);
+      localStorage.setItem('theme', theme);
     </script>
 
   </body>
