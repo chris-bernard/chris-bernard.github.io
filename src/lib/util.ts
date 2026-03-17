@@ -16,3 +16,10 @@ export function formatDate(
 
   return new Intl.DateTimeFormat("en-CA", formatOptions).format(date);
 }
+
+export function calculateReadTime(content: string): string {
+  const wordsPerMinute = 200;
+  const words = content.trim().split(/\s+/).length;
+  const minutes = Math.ceil(words / wordsPerMinute);
+  return `${minutes} min read`;
+}

@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @config "../../tailwind.config.mjs";
 
 @layer base {
@@ -46,5 +48,25 @@
       rgb(var(--light-mode-background)),
       rgb(var(--dark-mode-background))
     );
+  }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+    mix-blend-mode: normal;
+  }
+
+  .dark::view-transition-old(root) {
+    z-index: 1;
+  }
+  .dark::view-transition-new(root) {
+    z-index: 999;
+  }
+
+  ::view-transition-old(root) {
+    z-index: 999;
+  }
+  ::view-transition-new(root) {
+    z-index: 1;
   }
 }

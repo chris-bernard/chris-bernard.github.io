@@ -8,7 +8,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 
 import SeoPost from "@/components/SeoPost.astro";
 
-import { formatDate } from "@/lib/util";
+import { formatDate, calculateReadTime } from "@/lib/util";
 
 interface Props {
   entry: CollectionEntry<"blog">;
@@ -24,34 +24,37 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+const readTime = calculateReadTime(entry.body || "");
 ---
 
 <BaseLayout>
   <SeoPost slot="head" entry={entry} />
   <main>
-    <a
-      href="/"
-      class="block py-3 text-lg font-medium uppercase text-lightModeForegroundMuted underline underline-offset-4 hover:text-lightModeForeground dark:text-darkModeForegroundMuted dark:hover:text-darkModeForeground"
-      >{`← ${SITE.name}`}</a
-    >
+    <nav>
+      <a
+        href="/"
+        class="block py-3 text-lg font-medium uppercase text-lightModeForegroundMuted underline underline-offset-4 hover:text-lightModeForeground dark:text-darkModeForegroundMuted dark:hover:text-darkModeForeground"
+        >{`← ${SITE.name}`}</a
+      >
+    </nav>
     {
       entry.data.image && (
         <Image
           src={entry.data.image}
           alt={entry.data.imageAlt || ""}
-          class="mt-10 h-auto w-full"
+          class="mt-10 h-auto w-full rounded-lg shadow-md"
         />
       )
     }
     <h1
-      class="mt-6 text-center text-balance text-2xl font-medium text-lightModeForeground dark:text-darkModeForeground"
+      class="mt-6 text-center text-balance text-4xl font-bold text-lightModeForeground dark:text-darkModeForeground"
     >
       {entry.data.title}
     </h1>
     <p
-      class="text-center text-sm text-lightModeForegroundMuted dark:text-darkModeForegroundMuted"
+      class="mt-2 text-center text-sm italic text-lightModeForegroundMuted dark:text-darkModeForegroundMuted opacity-80"
     >
-      {formatDate(entry.data.publicationDate)}
+      {formatDate(entry.data.publicationDate)} • {readTime}
     </p>
     <hr class="my-6 opacity-50" />
     <div class="prose mx-auto mb-16 dark:prose-invert">
