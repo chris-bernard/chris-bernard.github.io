@@ -1,12 +1,13 @@
 import siteConfigJson from "./siteConfig.json";
 
 export interface SiteConfiguration {
+  title: string;
   name: string;
+  role: string;
   bio: string;
   profilePicture: string;
   url: string;
   blog: boolean;
-  title: string;
   og: OpenGraph;
   iconLinks: IconLink[];
   customLinks: CustomLink[];
