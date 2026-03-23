@@ -1,8 +1,9 @@
 {
   "title": "Christophe Bernard - Bio Links",
-  "name": "Christophe Bernard",
   "role": "Software Engineer - Product Maker - IA Adopter",
-  "bio": "J'imagine et réalise des softwares sur mesure, en alliant performance et expérience utilisateur, pour accompagner la croissance et servir le business model",
+  "name": "Christophe Bernard",
+  "hero": "Construire le bon produit avant de bien le construire.",
+  "bio": "J’accompagne les fondateurs et startups early à structurer, tester et développer des produits utiles, sans gaspiller des mois de dev",
   "profilePicture": "/profile-picture.jpg",
   "url": "https://chris-bernard.github.io",
   "blog": true,
