@@ -1,0 +1,16 @@
+---
+import { SITE } from "@/siteConfig";
+import ThemeToggle from "./ThemeToggle.astro";
+---
+
+<header class="bg-lightModeIconLinkBackground dark:bg-darkModeIconLinkBackground border-b border-lightModeIconLinkOutline dark:border-darkModeIconLinkOutline mb-8">
+  <div class="px-3 sm:px-6 flex items-center justify-between py-4">
+    <div class="flex-1"></div>
+    <div class="inline-flex items-center text-sm font-semibold tracking-widest text-lightModeForegroundMuted dark:text-darkModeForegroundMuted">
+      {SITE.role}
+    </div>
+    <div class="flex-1 flex justify-end">
+      <ThemeToggle />
+    </div>
+  </div>
+</header>
