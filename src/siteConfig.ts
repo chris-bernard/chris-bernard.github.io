@@ -4,6 +4,7 @@ export interface SiteConfiguration {
   title: string;
   name: string;
   role: string;
+  hero: string;
   bio: string;
   profilePicture: string;
   url: string;
