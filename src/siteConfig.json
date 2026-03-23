@@ -14,10 +14,6 @@
   },
   "iconLinks": [
     {
-      "icon": "link",
-      "url": "https://www.christophe-bernard.com/"
-    },
-    {
       "icon": "email",
       "url": "mailto:contact@christophe-bernard.com"
     },
@@ -36,16 +32,12 @@
   ],
   "customLinks": [
     {
-      "title": "\uD83D\uDE80 ZRS Lab",
-      "url": "https://www.zrs.fr"
-    },
-    {
-      "title": "☄\uFE0F Freelance Bootstrap",
+      "title": "Discuter de votre produit",
       "url": "https://calendly.com/freelance-bootstrap/30min"
     },
     {
-      "title": "\uD83C\uDFDB\uFE0F Investing Tools",
-      "url": "https://investing.zrs.fr/"
+      "title": "Mon agence et mes prestations pour startups",
+      "url": "https://www.zrs.fr"
     }
   ]
 }
