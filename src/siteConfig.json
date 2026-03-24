@@ -1,8 +1,8 @@
 {
   "title": "Christophe Bernard - Bio Links",
-  "role": "Software Engineer - Product Maker - IA Adopter",
+  "role": "Tech & Product pour startup early-stage",
   "name": "Christophe Bernard",
-  "hero": "Construire le bon produit avant de bien le construire.",
+  "hero": "Construire le bon produit avant de bien le construire",
   "bio": "J’accompagne les fondateurs et startups early à structurer, tester et développer des produits utiles, sans gaspiller des mois de dev",
   "profilePicture": "/profile-picture.jpg",
   "url": "https://chris-bernard.github.io",
@@ -32,7 +32,7 @@
   ],
   "customLinks": [
     {
-      "title": "Discuter de votre produit",
+      "title": "Un premier contact pour clarifier votre projet en 30 min",
       "url": "https://calendly.com/freelance-bootstrap/30min"
     },
     {
