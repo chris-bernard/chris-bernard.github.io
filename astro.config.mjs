@@ -6,9 +6,6 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  redirects: {
-    "/blog": "/",
-  },
   site: "https://chris-bernard.github.io/",
   integrations: [sitemap(), icon()],
   vite: {
