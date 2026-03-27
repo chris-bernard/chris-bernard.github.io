@@ -5,7 +5,11 @@ import ThemeToggle from "./ThemeToggle.astro";
 
 <header class="bg-lightModeIconLinkBackground dark:bg-darkModeIconLinkBackground border-b border-lightModeIconLinkOutline dark:border-darkModeIconLinkOutline mb-8">
   <div class="px-3 sm:px-6 flex items-center justify-between py-4">
-    <div class="flex-1"></div>
+    <div class="flex-1 flex items-center">
+      <a href="/" class="inline-flex items-center hover:opacity-80 transition-opacity">
+        <img src="/favicon-32x32-cb.png" alt="Logo" class="w-8 h-8 border-lightModeIconLinkOutline dark:border-darkModeIconLinkOutline" />
+      </a>
+    </div>
     <div class="inline-flex items-center text-sm font-semibold tracking-widest text-lightModeForegroundMuted dark:text-darkModeForegroundMuted">
       {SITE.role}
     </div>
