@@ -1,20 +1,22 @@
 ---
-title: A propos
-description: En savoir plus ?
-publicationDate: 2025-03-26
+title: Construire le bon produit avant de bien le construire
 ---
 
-## Présentation
+Je travaille avec des fondateurs et des startups early-stage qui veulent transformer une idée en produit utile, sans perdre des mois à développer la mauvaise solution.
 
-Depuis près de 20 ans, je transforme des idées ambitieuses en produits technologiques créateurs de valeur. Mon parcours unique combine une expertise technique pointue et une vision produit stratégique, nourrie auprès des utilisateurs et des marchés.
+Depuis près de 20 ans, j’interviens à l’intersection de la technique et du produit. J’ai contribué à la conception et au développement d’applications complexes (SaaS, marketplaces, plateformes web et mobiles) dans des contextes de forte incertitude, où les décisions produit ont un impact direct sur le succès ou l’échec du projet.
 
-Développeur full stack senior spécialisé en Java/JVM et Angular, j'accompagne startups et scale-ups dans la création d'applications complexes (SaaS, marketplaces, applications web et mobiles). Ma signature : des architectures robustes qui supportent la croissance, couplées à une approche produit data-driven, au service des vos objectifs (part de marché, acquisition/rétention client, revenus, rentabilité).
+Avec le temps, j’ai constaté que la plupart des difficultés ne viennent pas de la technologie, mais du manque de clarté sur le problème à résoudre, la proposition de valeur et les priorités. C’est sur ces sujets que j’apporte aujourd’hui le plus de valeur.
 
-Au-delà du code, je m'investis comme product leader et mentor. Je structure des feuilles de route produit, optimise l'expérience utilisateur et guide les équipes vers le product-market fit. Mon approche Lean IT, basée sur la validation continue et l'itération rapide, maximise les chances de succès tout en minimisant les risques.
+Mon rôle est d’agir comme partenaire tech & product pour :
 
-Entrepreneur dans l'âme, je m'implique aussi dans le mentorat de freelances et la structuration de startups early-stage. Mes domaines de prédilection : la finance et l’investissement, les services à la personne et l’éco-système des indépendants.
+- structurer une idée ou un produit existant
+- définir une roadmap réaliste et priorisée
+- construire et tester rapidement des premières versions
+- sécuriser les choix techniques pour qu’ils supportent la croissance
 
-Vous avez un projet ambitieux ? Contactez-moi pour :
-- Des missions freelance en développement ou product management
-- Du mentorat technique ou entrepreneurial
-- Des opportunités d'association dans des startups early-stage
+Mon approche s’appuie sur le Lean, le test continu et le “thinking in bets” : avancer avec des hypothèses, mesurer, apprendre et ajuster, plutôt que de parier tout le projet sur une seule vision non validée.
+
+Au-delà des missions freelance, je m’investis également dans le mentorat et l’accompagnement de projets entrepreneuriaux, notamment dans les domaines de la finance, des services et de l’écosystème des indépendants.
+
+Si vous travaillez sur un produit ou une idée que vous souhaitez clarifier, vous pouvez me contacter directement depuis la page principale pour en discuter.

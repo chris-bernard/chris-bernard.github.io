@@ -38,6 +38,10 @@
     {
       "title": "Mon agence et mes prestations pour startups",
       "url": "https://www.zrs.fr"
+    },
+    {
+      "title": "A propos",
+      "url": "/about"
     }
   ]
 }
