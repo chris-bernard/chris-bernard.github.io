@@ -33,15 +33,23 @@
   "customLinks": [
     {
       "title": "Un premier contact pour clarifier votre projet en 30 min",
-      "url": "https://calendly.com/freelance-bootstrap/30min"
+      "url": "https://calendly.com/freelance-bootstrap/30min",
+      "target": "_blank"
     },
     {
       "title": "Mon agence et mes prestations pour startups",
-      "url": "https://www.zrs.fr"
+      "url": "https://www.zrs.fr",
+      "target": "_blank"
     },
     {
       "title": "A propos",
-      "url": "/about"
+      "url": "/about",
+      "target": "_self"
+    },
+    {
+      "title": "CV",
+      "url": "/cv",
+      "target": "_blank"
     }
   ]
 }

@@ -28,6 +28,7 @@ interface IconLink {
 interface CustomLink {
   title: string;
   url: string;
+  target: string;
 }
 
 export const SITE: SiteConfiguration = {
