@@ -4,6 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
+    <meta name="robots" content="noimageindex" />
     <title>Christophe Bernard - CV</title>
 
     <style>
@@ -20,10 +21,28 @@
             padding: 0 20px;
         }
 
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .header-content {
+            flex: 1;
+        }
+
         .header h1 {
             font-size: 24px;
             margin: 0;
             letter-spacing: 1px;
+        }
+
+        .photo {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-left: 20px;
         }
 
         .header h2 {
@@ -113,13 +132,16 @@
 
     <!-- HEADER -->
     <div class="header">
-        <h1>CHRISTOPHE BERNARD</h1>
-        <h2>Staff Engineer / Product-minded Tech Lead</h2>
-        <div class="contact">
-            Paris • Remote worldwide<br>
-            christophe.bernard@gmail.com • +33 6 67 24 54 46<br>
-            chris-bernard.github.io • github.com/chris-bernard
+        <div class="header-content">
+            <h1>CHRISTOPHE BERNARD</h1>
+            <h2>Staff Engineer / Product-minded Tech Lead</h2>
+            <div class="contact">
+                Paris • Remote worldwide<br>
+                christophe.bernard@gmail.com • +33 6 67 24 54 46<br>
+                chris-bernard.github.io • github.com/chris-bernard
+            </div>
         </div>
+        <img src="/cv-photo.jpg" alt="Christophe Bernard" class="photo" />
     </div>
 
     <!-- VALUE -->
