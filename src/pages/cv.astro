@@ -8,6 +8,8 @@
     <title>Christophe Bernard - CV</title>
 
     <style>
+        @import "tailwindcss";
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
             margin: 0;
@@ -22,19 +24,11 @@
         }
 
         .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+            /* Handled by Tailwind flex classes */
         }
 
         .header-content {
-            flex: 1;
-        }
-
-        .header h1 {
-            font-size: 24px;
-            margin: 0;
-            letter-spacing: 1px;
+            /* Handled by Tailwind flex-1 class */
         }
 
         .photo {
@@ -42,7 +36,13 @@
             height: 110px;
             border-radius: 50%;
             object-fit: cover;
-            margin-left: 20px;
+            /* margin-left handled by Tailwind */
+        }
+
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+            letter-spacing: 1px;
         }
 
         .header h2 {
@@ -57,7 +57,7 @@
             color: #666;
         }
 
-        .value {
+        .hero {
             background: #f5f5f5;
             padding: 12px;
             margin: 20px 0;
@@ -65,19 +65,10 @@
             line-height: 1.4;
         }
 
-        .value ul {
-            margin: 8px 0 0 16px;
-            padding: 0;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 30px;
-        }
-
-        .section {
-            margin-bottom: 20px;
+        .hero ul {
+            margin: 8px 0 0 0;
+            padding-left: 16px;
+            list-style-type: disc;
         }
 
         .section h3 {
@@ -105,18 +96,20 @@
         }
 
         .job ul {
-            margin: 4px 0 0 16px;
-            padding: 0;
+            margin: 4px 0 0 0;
+            padding-left: 16px;
+            list-style-type: disc;
             font-size: 11px;
         }
 
         .block {
-            margin-bottom: 16px;
+            margin-bottom: 24px;
         }
 
         .block ul {
-            margin: 4px 0 0 14px;
-            padding: 0;
+            margin: 4px 0 0 0;
+            padding-left: 16px;
+            list-style-type: disc;
             font-size: 11px;
         }
 
@@ -131,8 +124,8 @@
 <div class="container">
 
     <!-- HEADER -->
-    <div class="header">
-        <div class="header-content">
+    <div class="header flex flex-col-reverse sm:flex-row md:justify-between items-center sm:items-start">
+        <div class="header-content flex-1 text-center sm:text-left">
             <h1>CHRISTOPHE BERNARD</h1>
             <h2>Staff Engineer / Product-minded Tech Lead</h2>
             <div class="contact">
@@ -141,11 +134,11 @@
                 chris-bernard.github.io • github.com/chris-bernard
             </div>
         </div>
-        <img src="/cv-photo.jpg" alt="Christophe Bernard" class="photo" />
+        <img src="/cv-photo.jpg" alt="Christophe Bernard" class="photo mb-4 sm:mb-0" />
     </div>
 
     <!-- VALUE -->
-    <div class="value">
+    <div class="hero">
         Engineer with 20+ years of experience helping startups and scale-ups
         build the right product before building it right.<br><br>
 
@@ -159,113 +152,114 @@
         </ul>
     </div>
 
-    <!-- GRID -->
-    <div class="grid">
+    <!-- FLEXBOX CONTENT -->
+    <div class="flex flex-col md:flex-row md:gap-10">
 
         <!-- LEFT -->
-        <div>
+        <div class="section md:w-2/3">
 
-            <div class="section">
-                <h3>EXPERIENCES</h3>
+            <div class="block">
+                    <h3>EXPERIENCES</h3>
 
-                <div class="job">
-                    <div class="job-header">
-                        <span>Datalok — Product Advisor</span>
-                        <span>2024–2025</span>
+                    <div class="job">
+                        <div class="job-header">
+                            <span>Datalok — Product Advisor</span>
+                            <span>2024–2025</span>
+                        </div>
+                        <div class="job-sub">Datacenters marketplace (early-stage) - Pre-PMF</div>
+                        <ul>
+                            <li>Took product from 0 → 5 paying clients</li>
+                            <li>Structured product positioning and user feedback loops</li>
+                            <li>Defined UX, roadmap and iteration cycles</li>
+                            <li>Bridge between founders, product vision and engineering</li>
+                        </ul>
                     </div>
-                    <div class="job-sub">Datacenters marketplace (early-stage) - Pre-PMF</div>
-                    <ul>
-                        <li>Took product from 0 → 5 paying clients</li>
-                        <li>Structured product positioning and user feedback loops</li>
-                        <li>Defined UX, roadmap and iteration cycles</li>
-                        <li>Bridge between founders, product vision and engineering</li>
-                    </ul>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <span>Independent Projects & Product Strategy</span>
+                            <span>2022–2024</span>
+                        </div>
+                        <div class="job-sub">Entrepreneurial exploration</div>
+                        <ul>
+                            <li>Built and structured a coaching activity for freelancers</li>
+                            <li>Developed content strategy and audience on LinkedIn</li>
+                            <li>Explored multiple product ideas (SaaS, marketplaces)</li>
+                            <li>Continuous exploration of AI, LLM workflows and MCP</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <span>Malt — Staff Software Engineer</span>
+                            <span>2021–2022</span>
+                        </div>
+                        <div class="job-sub">Europe's leading freelance marketplace - Series C funding</div>
+                        <ul>
+                            <li>Led initiatives improving freelancer acquisition and experience</li>
+                            <li>Contributed to product decisions impacting conversion and retention</li>
+                            <li>Aligned engineering execution with product and business goals</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <span>Wegrow — First Engineer / Tech Lead</span>
+                            <span>2018–2021</span>
+                        </div>
+                        <div class="job-sub">Early-stage SaaS - From pre-PMF to seed</div>
+                        <ul>
+                            <li>Built SaaS platform from scratch (architecture + delivery)</li>
+                            <li>Owned roadmap, prioritization and delivery cycles</li>
+                            <li>Combined engineering leadership with product decisions</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <span>Gaston Services — First Engineer</span>
+                            <span>2017–2018</span>
+                        </div>
+                        <div class="job-sub">B2C automotive SaaS (early-stage) - Pre-PMF</div>
+                        <ul>
+                            <li>Built full product (customer app, ops, backoffice)</li>
+                            <li>Designed event-driven architecture (event sourcing)</li>
+                            <li>Contributed to product design via event storming</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <span>Homework.chat — First Engineer</span>
+                            <span>2015–2016</span>
+                        </div>
+                        <div class="job-sub">EdTech startup (early-stage) - Pre-PMF</div>
+                        <ul>
+                            <li>Built early version of a tutoring marketplace (students ↔ teachers)</li>
+                            <li>Explored business model and product positioning</li>
+                            <li>Designed and implemented fullstack architecture (API + frontend)</li>
+                            <li>Delivered MVP and iterated on early user feedback</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <span>Earlier Experiences</span>
+                            <span>2006–2015</span>
+                        </div>
+                        <div class="job-sub">Postions in Software Engineering and Delivery</div>
+                        <ul>
+                            <li>Architecture & tech lead roles in large-scale systems</li>
+                            <li>Sale and distribution of travel services (Amadeus, SNCF Connect) & Banking (Natixis, Société Générale CIB)</li>
+                        </ul>
+                    </div>
+
                 </div>
 
-                <div class="job">
-                    <div class="job-header">
-                        <span>Independent Projects & Product Strategy</span>
-                        <span>2022–2024</span>
-                    </div>
-                    <div class="job-sub">Entrepreneurial exploration</div>
-                    <ul>
-                        <li>Built and structured a coaching activity for freelancers</li>
-                        <li>Developed content strategy and audience on LinkedIn</li>
-                        <li>Explored multiple product ideas (SaaS, marketplaces)</li>
-                        <li>Continuous exploration of AI, LLM workflows and MCP</li>
-                    </ul>
-                </div>
-
-                <div class="job">
-                    <div class="job-header">
-                        <span>Malt — Staff Software Engineer</span>
-                        <span>2021–2022</span>
-                    </div>
-                    <div class="job-sub">Europe's leading freelance marketplace - Series C funding</div>
-                    <ul>
-                        <li>Led initiatives improving freelancer acquisition and experience</li>
-                        <li>Contributed to product decisions impacting conversion and retention</li>
-                        <li>Aligned engineering execution with product and business goals</li>
-                    </ul>
-                </div>
-
-                <div class="job">
-                    <div class="job-header">
-                        <span>Wegrow — First Engineer / Tech Lead</span>
-                        <span>2018–2021</span>
-                    </div>
-                    <div class="job-sub">Early-stage SaaS - From pre-PMF to seed</div>
-                    <ul>
-                        <li>Built SaaS platform from scratch (architecture + delivery)</li>
-                        <li>Owned roadmap, prioritization and delivery cycles</li>
-                        <li>Combined engineering leadership with product decisions</li>
-                    </ul>
-                </div>
-
-                <div class="job">
-                    <div class="job-header">
-                        <span>Gaston Services — First Engineer</span>
-                        <span>2017–2018</span>
-                    </div>
-                    <div class="job-sub">B2C automotive SaaS (early-stage) - Pre-PMF</div>
-                    <ul>
-                        <li>Built full product (customer app, ops, backoffice)</li>
-                        <li>Designed event-driven architecture (event sourcing)</li>
-                        <li>Contributed to product design via event storming</li>
-                    </ul>
-                </div>
-
-                <div class="job">
-                    <div class="job-header">
-                        <span>Homework.chat — First Engineer</span>
-                        <span>2015–2016</span>
-                    </div>
-                    <div class="job-sub">EdTech startup (early-stage) - Pre-PMF</div>
-                    <ul>
-                        <li>Built early version of a tutoring marketplace (students ↔ teachers)</li>
-                        <li>Explored business model and product positioning</li>
-                        <li>Designed and implemented fullstack architecture (API + frontend)</li>
-                        <li>Delivered MVP and iterated on early user feedback</li>
-                    </ul>
-                </div>
-
-                <div class="job">
-                    <div class="job-header">
-                        <span>Earlier Experiences</span>
-                        <span>2006–2015</span>
-                    </div>
-                    <div class="job-sub">Postions in Software Engineering and Delivery</div>
-                    <ul>
-                        <li>Architecture & tech lead roles in large-scale systems</li>
-                        <li>Sale and distribution of travel services (Amadeus, SNCF Connect) & Banking (Natixis, Société Générale CIB)</li>
-                    </ul>
-                </div>
-
-            </div>
         </div>
 
         <!-- RIGHT -->
-        <div>
+        <div class="section md:w-1/3">
 
             <div class="block">
                 <h3>CORE EXPERTISE</h3>
