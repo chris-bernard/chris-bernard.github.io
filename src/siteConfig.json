@@ -1,6 +1,6 @@
 {
   "title": "Christophe Bernard - Bio Links",
-  "role": "Tech & Product pour startup early-stage",
+  "role": "Tech & Product pour startups & scale-ups",
   "name": "Christophe Bernard",
   "hero": "Construire le bon produit avant de bien le construire",
   "bio": "J’accompagne les fondateurs et startups early à structurer, tester et développer des produits utiles, sans gaspiller des mois de dev",
@@ -32,7 +32,7 @@
   ],
   "customLinks": [
     {
-      "title": "Un premier contact pour clarifier votre projet en 30\u00A0min",
+      "title": "Un RDV pour clarifier votre projet en 30\u00A0min",
       "url": "https://calendly.com/freelance-bootstrap/30min",
       "target": "_blank"
     },
@@ -42,12 +42,12 @@
       "target": "_blank"
     },
     {
-      "title": "A propos",
+      "title": "Ma vision, mon approche",
       "url": "/about",
       "target": "_self"
     },
     {
-      "title": "CV",
+      "title": "Voir mon CV",
       "url": "/cv",
       "target": "_blank"
     }
