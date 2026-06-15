@@ -6,7 +6,7 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://chris-bernard.github.io/",
+  site: "https://chris-bernard.github.io",
   integrations: [sitemap(), icon()],
   vite: {
     plugins: [tailwindcss()],
