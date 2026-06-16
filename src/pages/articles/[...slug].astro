@@ -11,11 +11,11 @@ import SeoPost from "@/components/SeoPost.astro";
 import { formatDate, calculateReadTime } from "@/lib/util";
 
 interface Props {
-  entry: CollectionEntry<"blog">;
+  entry: CollectionEntry<"articles">;
 }
 
 export async function getStaticPaths() {
-  const blog = await getCollection("blog");
+  const blog = await getCollection("articles");
   return blog.map((entry) => ({
     params: { slug: entry.id },
     props: { entry },

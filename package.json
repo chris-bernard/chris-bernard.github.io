@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro check --watch & astro dev",
     "start": "astro dev",
-    "build": "astro check & astro build",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -15,15 +15,15 @@
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.3",
-    "@tailwindcss/vite": "^4.3.0",
-    "astro": "^6.4.2",
+    "@tailwindcss/vite": "^4.3.1",
+    "astro": "^6.4.7",
     "astro-icon": "^1.1.5",
-    "tailwindcss": "^4.3.0"
+    "tailwindcss": "^4.3.1"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.9",
-    "@tailwindcss/typography": "^0.5.19",
-    "prettier": "^3.8.3",
+    "@tailwindcss/typography": "^0.5.20",
+    "prettier": "^3.8.4",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.8.0",
     "typescript": "^6.0.3"
