@@ -14,14 +14,14 @@ const ogImage = new URL("./og.jpg", Astro.site);
 
 <title>{title}</title>
 <meta name="description" content={description} />
-<link rel="canonical" href={SITE.url} />
+<link rel="canonical" href={Astro.url} />
 
 <meta property="og:title" content={title} />
 <meta property="og:description" content={ogDescription} />
 <meta property="og:image" content={ogImage} />
 <meta property="og:image:alt" content={ogDescription} />
 <meta property="og:type" content={SITE.og.type} />
-<meta property="og:url" content={SITE.url} />
+<meta property="og:url" content={Astro.url} />
 <meta property="og:locale" content={SITE.og.locale} />
 
 <meta name="twitter:title" content={title} />

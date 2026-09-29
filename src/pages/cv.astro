@@ -1,11 +1,13 @@
 ---
----
+import { SITE } from "@/siteConfig.ts";
+import SeoPage from "@/components/SeoPage.astro";---
 
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="noimageindex" />
     <title>Christophe Bernard - CV</title>
+    <SeoPage slot="head" title={SITE.title} description={SITE.bio} />
 
     <style>
         @import "tailwindcss";
