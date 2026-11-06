@@ -1,9 +1,9 @@
 {
   "title": "Christophe Bernard - Staff Software Engineer & Software Architect",
-  "role": "Tech & Product pour startups & scale-ups",
+  "role": "Senior / Staff Software Engineer · Architecture logicielle",
   "name": "Christophe Bernard",
-  "hero": "Construire le bon produit avant de bien le construire",
-  "bio": "J’accompagne les fondateurs et startups early à structurer, tester et développer des produits utiles, sans gaspiller des mois de dev",
+  "hero": "Je transforme des problèmes métier complexes ou encore flous en décisions produit et techniques exécutables",
+  "bio": "Plus de 20 ans d’expérience pour clarifier ce qu’il faut construire, sécuriser l’architecture et accompagner le passage du cadrage au delivery. Software Engineering, Product Engineering et intégration pragmatique de capacités IA.",
   "profilePicture": "/profile-picture.jpg",
   "url": "https://www.christophe-bernard.com/",
   "blog": true,
@@ -15,7 +15,7 @@
   "iconLinks": [
     {
       "icon": "email",
-      "url": "mailto:contact@christophe-bernard.com"
+      "url": "mailto:contact@christophe-bernard.com?subject=Opportunité professionnelle"
     },
     {
       "icon": "github",
@@ -24,32 +24,17 @@
     {
       "icon": "linkedin",
       "url": "https://www.linkedin.com/in/christophe-bernard-freelance"
-    },
-    {
-      "icon": "calendar",
-      "url": "https://calendly.com/freelance-bootstrap/30min"
     }
   ],
   "customLinks": [
     {
-      "title": "Un RDV pour clarifier votre projet en 30\u00A0min",
-      "url": "https://calendly.com/freelance-bootstrap/30min",
-      "target": "_blank"
-    },
-    {
-      "title": "Mon agence et mes prestations pour startups",
-      "url": "https://www.zrs.fr",
-      "target": "_blank"
-    },
-    {
-      "title": "Ma vision, mon approche",
-      "url": "/about",
-      "target": "_self"
-    },
-    {
-      "title": "Voir mon CV",
+      "title": "Voir mon expérience et mes réalisations",
       "url": "/cv",
       "target": "_blank"
+    },
+    {
+      "title": "Discuter d’un rôle ou d’un projet",
+      "url": "mailto:contact@christophe-bernard.com?subject=Opportunité professionnelle"
     }
   ]
 }
